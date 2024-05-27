@@ -7,6 +7,10 @@
     <!-- 기기마다 비율 조정-->
     <title>귤맛잇음</title>
     <style>
+        html, /*쉼표 쓰면 같이 적용됨*/
+        body{
+            height: 100%; /* 100% = 브라우저 크기*/
+        }
         .title{
             border: 3px solid #000000;
             margin: 10px;
@@ -23,11 +27,18 @@
         p{
             font-style: italic;
         }
+        #container{
+            width: 500px;
+            height: 200px;
+            margin: auto; /* margin auto의 기준은 가로! = 가로 정렬*/
+
+        }
     </style>
 </head>
 
 <body>
 <!--세미콜론으로 나누기-->
+<div id = "container"> <!--div: 그룹 개념-->
 <h1 class = "title bp">레드향</h1> <!--클래스 2개 넣으면 마지막에 넣은 속성 적용-->
 <h2 style = "color: rgb(0, 0, 0);">껍질에 붉은 빛이 돌아 <span class="bp">레드향</span>이라 불린다.</h2>
 <h2 style="color: rgb(0, 0, 0); ">레드향은 한라봉과 귤을 교배한 것으로<br>일반 귤보다 2~3배 크고, 과육이 붉고 통통하다.</h2>
@@ -49,6 +60,7 @@
 하.
 
 </p>
+</div>
 </body>
 
 </html>
