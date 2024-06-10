@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;  
+            gap: 18px; /*gap은 width가 작아진다고 해도 없어지지 않음. 여백유지*/
+            flex-wrap: wrap; /*chip을 써서 사람 화면에 따라 자동으로 내려가게 함. 원래는 한줄에 다 있는거임 */
+            justify-content: space-evenly; /*가로 조절 space-between, space-around, space-evenly*/
+            align-items: center; /*위 아래 조절*/
+        }
+        .item{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class = "container">
+        <div class = "item" style="background: pink;">hello <br>ooojkjljjjkjk<br>kjjjkjkjkjo</div>
+        <div style="display: flex; gap: 8px;">
+            <div class = "item" style="background: lightblue;">byee eeee</div>
+            <div class = "item" style="background-color: aqua;">hell llllll</div>
+            <div class = "item" style="background: lightblue;">byee eeee</div>
+            <div class = "item" style="background-color: aqua;">hell llllll</div>
+        </div>
+    </div>
+</body>
+</html>
